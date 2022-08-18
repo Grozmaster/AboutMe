@@ -1,5 +1,65 @@
-$bgcol  : green;
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
+}
+
+$ff-medium : 'Gilroy-Medium';
+$ff-bold : 'Gilroy-Bold';
+$fz-primary : 18px;
+$fz-secondary : 34px;
+$color-primary : #070707;
+$color-secondary : #828282;
 
 body {
-    background-color: $bgcol;
+    font-family: $ff-medium;
+    font-size: $fz-primary;
+    color: $color-primary;
+    line-height: 22px;
+    text-align: center;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header {
+    .container {
+        max-width: 975px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    .menu {
+        padding: 32px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-secondary;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    hr {
+        margin: 0;
+        border: 0;
+        height: 1px;
+        background-color: $color-secondary;
+    }
+
 }
