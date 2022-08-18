@@ -117,7 +117,9 @@ p {
 }
 .skills .skills__cards {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 90px;
 }
 .skills .skills__icon {
