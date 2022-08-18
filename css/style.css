@@ -30,6 +30,11 @@ a {
 
 img {
   display: block;
+  width: 100%;
+}
+
+p {
+  margin: 0;
 }
 
 .container {
@@ -85,6 +90,21 @@ img {
   line-height: 20px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+}
+
+.aboutme {
+  padding: 120px 0 107px;
+  background-color: #F6F6F6;
+}
+.aboutme h2 {
+  margin: 0 auto;
+  padding-bottom: 17px;
+}
+.aboutme .aboutme__text {
+  padding: 0 15px;
+  max-width: 485px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
