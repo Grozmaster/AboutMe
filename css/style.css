@@ -23,11 +23,21 @@ ul {
   list-style: none;
 }
 
-.header .container {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+}
+
+.container {
   max-width: 975px;
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .header .menu {
   padding: 32px 0;
 }
@@ -36,7 +46,6 @@ ul {
   justify-content: space-between;
 }
 .header a {
-  text-decoration: none;
   color: #828282;
   font-family: "Gilroy-Bold";
 }
@@ -48,6 +57,34 @@ ul {
   border: 0;
   height: 1px;
   background-color: #828282;
+}
+
+.profile {
+  margin-bottom: 104px;
+}
+
+.profile__inner {
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profile__inner h1 {
+  margin: 0;
+  font-size: 46px;
+  line-height: 59px;
+}
+.profile__inner .employee {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.profile__inner .languages {
+  font-family: "Gilroy-Bold";
+  font-size: 16px;
+  line-height: 20px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=style.css.map */
