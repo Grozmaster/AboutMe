@@ -29,7 +29,7 @@ ul {
   margin: 0 auto;
 }
 .header .menu {
-  padding: 32px;
+  padding: 32px 0;
 }
 .header ul {
   display: flex;
@@ -38,6 +38,7 @@ ul {
 .header a {
   text-decoration: none;
   color: #828282;
+  font-family: "Gilroy-Bold";
 }
 .header a:hover {
   color: #070707;
