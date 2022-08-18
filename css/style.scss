@@ -93,7 +93,6 @@ p {
     align-items: center;
 
     h1 {
-        margin: 0;
         font-size: 46px;
         line-height: 59px;
     }
@@ -130,4 +129,32 @@ p {
         margin: 0 auto;
         text-align: center;
     }
+}
+
+// Skills
+.skills {
+    padding: 91px 0 110px;
+
+    p {
+        margin-top: 69px;
+    }
+
+    .skills__programs {
+        margin: 83px auto 110px;
+    }
+
+    .skills__cards {
+        display: flex;
+        justify-content: center;
+        gap: 90px;
+
+
+    }
+
+    .skills__icon {
+        width: 166px;
+        height: 206px;
+    }
+
+
 }
