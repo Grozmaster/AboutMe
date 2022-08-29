@@ -191,4 +191,53 @@ h2 {
 //   Footer
 .footer {
     background-color: #FFFFFF;
+    padding: 115px 0 120px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    .button__feedback {
+        background: #070707;
+        color: #FFFFFF;
+        padding: 10px 30px;
+        border: 0;
+        border-radius: 50px;
+        margin-bottom: 85px;
+
+        &:hover {
+            box-shadow: 0px 4px 4px rgba(49, 47, 47, 0.806);
+            cursor: pointer;
+        }
+    }
+
+    .footer__social {
+        margin-bottom: 45px;
+    }
+
+    .social__items {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+
+        & :hover {
+            fill: #828282;
+        }
+    }
+
+    .social__icon {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    span {
+        font-size: 14px;
+        line-height: 17px;
+        color: #828282;
+    }
 }

@@ -150,6 +150,45 @@ h2 {
 
 .footer {
   background-color: #FFFFFF;
+  padding: 115px 0 120px;
+}
+.footer h2 {
+  margin-bottom: 20px;
+}
+.footer p {
+  margin-bottom: 20px;
+}
+.footer .button__feedback {
+  background: #070707;
+  color: #FFFFFF;
+  padding: 10px 30px;
+  border: 0;
+  border-radius: 50px;
+  margin-bottom: 85px;
+}
+.footer .button__feedback:hover {
+  box-shadow: 0px 4px 4px rgba(49, 47, 47, 0.806);
+  cursor: pointer;
+}
+.footer .footer__social {
+  margin-bottom: 45px;
+}
+.footer .social__items {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.footer .social__items :hover {
+  fill: #828282;
+}
+.footer .social__icon {
+  width: 40px;
+  height: 40px;
+}
+.footer span {
+  font-size: 14px;
+  line-height: 17px;
+  color: #828282;
 }
 
 /*# sourceMappingURL=style.css.map */
