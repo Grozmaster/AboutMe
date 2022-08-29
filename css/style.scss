@@ -44,6 +44,10 @@ p {
     margin: 0;
 }
 
+h2 {
+    margin: 0;
+}
+
 // Header
 .container {
     max-width: 975px;
@@ -159,4 +163,31 @@ p {
     }
 
 
+}
+
+// Portfolio
+.portfolio {
+    background-color: #F6F6F6;
+    padding: 113px 0 96px;
+
+    .portfolio__inner {
+        margin-top: 50px;
+    }
+
+    .portfolio__item {
+        margin-bottom: 100px;
+
+        img {
+            padding-bottom: 45px;
+        }
+
+        a {
+            text-decoration-line: underline;
+        }
+    }
+}
+
+//   Footer
+.footer {
+    background-color: #FFFFFF;
 }

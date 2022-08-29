@@ -37,6 +37,10 @@ p {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+}
+
 .container {
   max-width: 975px;
   padding: 0 15px;
@@ -125,6 +129,27 @@ p {
 .skills .skills__icon {
   width: 166px;
   height: 206px;
+}
+
+.portfolio {
+  background-color: #F6F6F6;
+  padding: 113px 0 96px;
+}
+.portfolio .portfolio__inner {
+  margin-top: 50px;
+}
+.portfolio .portfolio__item {
+  margin-bottom: 100px;
+}
+.portfolio .portfolio__item img {
+  padding-bottom: 45px;
+}
+.portfolio .portfolio__item a {
+  text-decoration-line: underline;
+}
+
+.footer {
+  background-color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
