@@ -114,6 +114,7 @@ h2 {
         writing-mode: vertical-rl;
         transform: rotate(180deg);
     }
+
 }
 
 // AboutMe
@@ -293,5 +294,49 @@ h2 {
         .photo {
             content: url(../images/DenisNovik-mobile.jpg);
         }
+
+        .popup-img {
+            position: absolute;
+            top: 47px;
+            right: 17px;
+            width: 33px;
+            height: 20px;
+        }
+
+        .profile {
+            margin-bottom: 80px;
+        }
+
+        .aboutme,
+        .skills,
+        .portfolio {
+            padding: 80px 0;
+        }
+
+        .skills {
+            .skills__programs {
+                margin: 70px 0;
+            }
+        }
+
+        .portfolio {
+            padding: 80px 0px 20px;
+
+            .portfolio__item {
+                margin-bottom: 80px;
+            }
+
+        }
     }
+
+    .footer {
+        padding: 80px 0;
+
+        span {
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+
 }

@@ -229,6 +229,38 @@ h2 {
   main .photo {
     content: url(../images/DenisNovik-mobile.jpg);
   }
+  main .popup-img {
+    position: absolute;
+    top: 47px;
+    right: 17px;
+    width: 33px;
+    height: 20px;
+  }
+  main .profile {
+    margin-bottom: 80px;
+  }
+  main .aboutme,
+  main .skills,
+  main .portfolio {
+    padding: 80px 0;
+  }
+  main .skills .skills__programs {
+    margin: 70px 0;
+  }
+  main .portfolio {
+    padding: 80px 0px 20px;
+  }
+  main .portfolio .portfolio__item {
+    margin-bottom: 80px;
+  }
+
+  .footer {
+    padding: 80px 0;
+  }
+  .footer span {
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
