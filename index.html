@@ -43,7 +43,7 @@
                 </div>
             </div>
             <img class="photo" src="./images/DenisNovik.jpg" alt="DenisNovik">
-            <img class="popup-img" src="./images/popup-btn.svg" alt="">
+            <img onclick="popup()" class="popup-img" src="./images/popup-btn.svg" alt="">
         </section>
         <section class="aboutme">
             <h2 class="title">About me</h2>
@@ -167,7 +167,20 @@
             <img src="./images/up.svg" alt="">
         </button>
     </a>
-
+    <div class="popup">
+        <div class="container">
+            <nav class="menu">
+                <ul>
+                    <li><a onclick="popdown()" href="#!">Home</a></li>
+                    <li><a onclick="popdown()" href=".aboutme">About me</a></li>
+                    <li><a onclick="popdown()" href=".skills">Skills</a></li>
+                    <li><a onclick="popdown()" href=".portfolio">Portfolio</a></li>
+                    <li><a onclick="popdown()" href=".footer">Contacts</a></li>
+                </ul>
+            </nav>
+            <img onclick="popdown()" src="./images/close.svg" alt="close">
+        </div>
+    </div>
     <script src="./js/script.js"></script>
 </body>
 

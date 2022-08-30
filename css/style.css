@@ -71,6 +71,9 @@ h2 {
 .profile {
   margin-bottom: 104px;
 }
+.profile .popup-img {
+  display: none;
+}
 
 .profile__inner {
   margin: 30px auto;
@@ -207,6 +210,39 @@ h2 {
   height: 25px;
 }
 
+.popup {
+  display: none;
+  z-index: 50;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  padding: 0 15px;
+}
+.popup .menu {
+  padding: 50px 0;
+}
+.popup ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 60px;
+}
+.popup li {
+  font-family: 'Gilroy-Bold';
+  font-size: 34px;
+  line-height: 42px;
+  color: #828282;
+}
+.popup img {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 50px;
+  right: 25px;
+}
+
 @media (max-width: 375px) {
   .header .menu {
     display: none;
@@ -229,15 +265,16 @@ h2 {
   main .photo {
     content: url(../images/DenisNovik-mobile.jpg);
   }
-  main .popup-img {
+  main .profile {
+    margin-bottom: 80px;
+  }
+  main .profile .popup-img {
+    display: block;
     position: absolute;
     top: 47px;
     right: 17px;
     width: 33px;
     height: 20px;
-  }
-  main .profile {
-    margin-bottom: 80px;
   }
   main .aboutme,
   main .skills,

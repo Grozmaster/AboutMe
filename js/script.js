@@ -23,3 +23,11 @@ function scrollFunction() {
         mybutton[0].style = "display: none";
     }
 }
+const button = document.getElementsByClassName('popup');
+function popup() {
+    button[0].style = "display: block";
+}
+
+function popdown() {
+    button[0].style = "display: none";
+}
