@@ -1,10 +1,8 @@
 const smoothLinks = document.querySelectorAll("a[href^='.']");
-console.log(smoothLinks);
 for (let smoothLink of smoothLinks) {
     smoothLink.addEventListener("click", function (e) {
         e.preventDefault();
         const block = smoothLink.getAttribute("href");
-
 
         document.querySelector(block).scrollIntoView({
             behavior: "smooth",
@@ -14,24 +12,14 @@ for (let smoothLink of smoothLinks) {
 };
 
 
-// Получить кнопку:
-mybutton = document.getElementById("myBtn");
+mybutton = document.getElementsByClassName('up__button');
 
-// Когда пользователь прокручивает вниз 20px от верхней части документа, покажите кнопку
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
+    if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+        mybutton[0].style = "display: block";
     } else {
-        mybutton.style.display = "none";
+        mybutton[0].style = "display: none";
     }
-}
-
-// Когда пользователь нажимает на кнопку, прокрутите до верхней части документа
-function topFunction() {
-    document.querySelector('.header').scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-    });
 }
