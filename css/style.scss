@@ -271,9 +271,9 @@ h2 {
 
 // popup
 .popup {
-    visibility: hidden;
     opacity: 0;
-    transition: visibility 0s linear 300ms, opacity 300ms;
+    transition: 0.5s all;
+    pointer-events: none;
     z-index: 50;
     position: absolute;
     top: 0px;
@@ -281,6 +281,8 @@ h2 {
     width: 100%;
     background-color: #FFFFFF;
     padding: 0 15px;
+
+
 
     .menu {
         padding: 50px 0;
@@ -308,6 +310,14 @@ h2 {
         right: 25px;
     }
 }
+
+.active {
+    opacity: 1;
+    transition: 0.5s all;
+    pointer-events: all;
+}
+
+
 
 // Media 375px
 

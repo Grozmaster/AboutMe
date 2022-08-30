@@ -211,9 +211,9 @@ h2 {
 }
 
 .popup {
-  visibility: hidden;
   opacity: 0;
-  transition: visibility 0s linear 300ms, opacity 300ms;
+  transition: 0.5s all;
+  pointer-events: none;
   z-index: 50;
   position: absolute;
   top: 0px;
@@ -243,6 +243,12 @@ h2 {
   height: 25px;
   top: 50px;
   right: 25px;
+}
+
+.active {
+  opacity: 1;
+  transition: 0.5s all;
+  pointer-events: all;
 }
 
 @media (max-width: 375px) {

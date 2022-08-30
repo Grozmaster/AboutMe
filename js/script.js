@@ -22,20 +22,17 @@ function scrollFunction() {
     } else {
         mybutton[0].style = "display: none";
     }
-}
-const button = document.getElementsByClassName('popup');
-function popup() {
-    button[0].style.visibility = "visible";
-    button[0].style.opacity = "1";
-    button[0].style.transition = "visibility 0s linear 0s, opacity 500ms";
+};
 
-}
+const pop = document.querySelector('.popup');
+
+function popup() {
+    pop.classList.add('active');
+};
 
 function popdown() {
-    button[0].style.visibility = "hidden";
-    button[0].style.opacity = "0";
-    button[0].style.transition = " visibility 0s linear 300ms, opacity 500ms;";
+    pop.classList.remove('active');
+
+};
 
 
-
-}
