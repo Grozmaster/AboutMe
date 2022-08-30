@@ -211,7 +211,9 @@ h2 {
 }
 
 .popup {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s linear 300ms, opacity 300ms;
   z-index: 50;
   position: absolute;
   top: 0px;
