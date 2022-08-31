@@ -35,21 +35,27 @@ function popdown() {
 
 };
 
+
+
+
+
+
 let active;
 
 document.querySelector(".lang__en").addEventListener("click", function () {
     active = 'en';
-    location.href = window.location.pathname + '#' + active;
-    location.reload;
+
 });
 
 document.querySelector(".lang__ua").addEventListener("click", function () {
     active = 'ua';
-    location.href = window.location.pathname + '#' + active;
-    location.reload;
 
 });
 
 
+
 console.log(active);
 
+
+location.href = window.location.pathname + '#' + active;
+location.reload;
