@@ -35,18 +35,21 @@ function popdown() {
 
 };
 
-let active = "eng"
-const lang = document.querySelectorAll('.change__lang');
+let active;
 
-
-
-
-function changeUrl(text) {
-    console.log(text)
-    location.href = window.location.pathname + '#' + text;
+document.querySelector(".lang__en").addEventListener("click", function () {
+    active = 'en';
+    location.href = window.location.pathname + '#' + active;
     location.reload;
-    iterator.style = "color : #000000";
-}
+});
+
+document.querySelector(".lang__ua").addEventListener("click", function () {
+    active = 'ua';
+    location.href = window.location.pathname + '#' + active;
+    location.reload;
+
+});
 
 
+console.log(active);
 
