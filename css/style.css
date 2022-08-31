@@ -251,6 +251,20 @@ h2 {
   pointer-events: all;
 }
 
+.poplanguages {
+  font-family: "Gilroy-Bold";
+  font-size: 34px;
+  line-height: 42px;
+  color: #828282;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-block-end: auto;
+  padding-top: 50px;
+}
+.poplanguages a:last-child {
+  color: #000000;
+}
+
 @media (max-width: 375px) {
   .header .menu {
     display: none;

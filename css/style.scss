@@ -317,6 +317,20 @@ h2 {
     pointer-events: all;
 }
 
+.poplanguages {
+    font-family: $ff-bold;
+    font-size: 34px;
+    line-height: 42px;
+    color: #828282;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    margin-block-end: auto;
+    padding-top: 50px;
+
+    a:last-child {
+        color: #000000;
+    }
+}
 
 
 // Media 375px

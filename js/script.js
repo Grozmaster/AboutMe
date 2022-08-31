@@ -36,3 +36,19 @@ function popdown() {
 };
 
 
+const lang = document.querySelectorAll('.change__lang');
+for (const iterator of lang) {
+    iterator.addEventListener('click', changeUrl);
+    function changeUrl() {
+        let active = iterator.innerText.toLowerCase();
+        location.href = window.location.pathname + '#' + active;
+        location.reload;
+    }
+}
+
+
+
+
+
+
+
