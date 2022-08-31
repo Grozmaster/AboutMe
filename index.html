@@ -16,7 +16,7 @@
         <div class="container">
             <nav class="menu">
                 <ul>
-                    <li><a href="#!">Home</a></li>
+                    <li><a href="">Home</a></li>
                     <li><a href=".aboutme">About me</a></li>
                     <li><a href=".skills">Skills</a></li>
                     <li><a href=".portfolio">Portfolio</a></li>
@@ -37,9 +37,9 @@
                     <span>24 years old, Kryvyi Rih</span>
                 </div>
                 <div class="languages">
-                    <a onclick="setLang()" class="lang__change" href="">UA</a>
+                    <a onclick="setLang('ua')" class="lang__change" href="#!">UA</a>
                     <span> | </span>
-                    <a class="lang__change" href="">ENG</a>
+                    <a onclick="setLang('en')" class="lang__change" href="#!">ENG</a>
                 </div>
             </div>
             <img class="photo" src="./images/DenisNovik.jpg" alt="DenisNovik">
@@ -123,7 +123,7 @@
             <div class="footer__social">
                 <ul class="social__items">
                     <li>
-                        <a href="#!" target="_blank" rel="noopener noreferrer">
+                        <a href="" rel="noopener noreferrer">
                             <svg class="social__icon">
                                 <use xlink:href="symbol-defs.svg#icon-in">
                                 </use>
@@ -179,9 +179,9 @@
                 </ul>
             </nav>
             <div class="poplanguages">
-                <a class="lang__change" href="">UA</a>
+                <a onclick="setLang('ua')" class="lang__change" href="">UA</a>
                 <span> | </span>
-                <a class="lang__change" href="">ENG</a>
+                <a onclick="setLang('ua')" class="lang__change" href="">ENG</a>
             </div>
             <img onclick="popdown()" src="./images/close.svg" alt="close">
         </div>
