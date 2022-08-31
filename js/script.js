@@ -40,22 +40,23 @@ function popdown() {
 
 
 
-let active;
 
-document.querySelector(".lang__en").addEventListener("click", function () {
-    active = 'en';
+const change = document.querySelector(".lang__change");
 
-});
-
-document.querySelector(".lang__ua").addEventListener("click", function () {
-    active = 'ua';
-
-});
+// change.addEventListener("click", setLang);
 
 
 
-console.log(active);
 
 
-location.href = window.location.pathname + '#' + active;
-location.reload;
+
+
+function setLang() {
+    location.href = window.location.pathname + '#' + change.textContent;
+    location.reload();
+
+
+}
+
+
+
