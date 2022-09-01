@@ -54,11 +54,11 @@ const langMap = new Map([
     ["Contacts", "Контакти"],
     ["UX | UI designer", "UX | UI Дизайнер"],
     ["24 years old, Kryvyi Rih", "24 роки, Кривий Ріг"],
-    ["Denis Novik", "Денис<br/>Новік"],
+    ["Denis <br>Novik", "Денис<br/>Новік"],
     ["I work in such programs as", "Працюю в таких програмах як"],
-    ["Want to know more or just chat?\n                You are welcome!", "Хочете дізнатися більше чи просто поспілкуватися?<br>Ласкаво просимо!"],
+    ["Want to know more or just chat?<br>\n                You are welcome!", "Хочете дізнатися більше чи просто поспілкуватися?<br>Ласкаво просимо!"],
     ["Send message", "Відправити повідомлення"],
-    ["Like me on\n                LinkedIn, Instagram, Behance, Dribble", "Поставте лайк мені в<br/> LinkedIn, Instagram, Behance, Dribble"],
+    ["Like me on<br>\n                LinkedIn, Instagram, Behance, Dribble", "Поставте лайк мені в<br/> LinkedIn, Instagram, Behance, Dribble"],
     ["Denis Novik - UX/UI designer", "Денис Новік - UX/UI дизайнер"],
 ]);
 
@@ -79,8 +79,9 @@ if (hash === 'ua') {
     // console.log(langMap.keys)
     for (const item of arr) {
         for (const map of langMap.keys()) {
-            if (item.textContent === map) {
-                item.innerHTML = langMap.get(map)
+            if (item.innerHTML === map) {
+                item.innerHTML = langMap.get(map);
+                // console.log(langMap.get(map))
             }
 
         }
