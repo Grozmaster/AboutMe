@@ -41,14 +41,25 @@ function popdown() {
 
 
 const langMap = new Map([
-    ["Hi, I'm Denis – UX/UI designer from Ukraine.I'm interested in design and everything connected with it.", "Привіт, я Денис – UX/UI дизайнер з України. Мене цікавить дизайн і все, що з ним пов'язано."],
-    ["I'm studying at courses \"Web and mobile design interfaces\" in IT-Academy.", "Навчаюся на курсах \"Інтерфейси веб- та мобільного дизайну\" в IT-Academy."],
-    ["Ready to implement excellent projects with wonderful people.", "Готовий реалізовувати відмінні проекти з чудовими людьми."],
-    ["огурец", "500"],
-    ["огурец", "500"],
-    ["огурец", "500"],
-    ["огурец", "500"],
-    ["огурец", "500"]
+    ["Hi, I'm Denis – UX/UI designer from Ukraine.I'm interested in design and everything connected with\n                    it.",
+        "Привіт, я Денис – UX/UI дизайнер з України. Мене цікавить дизайн і все, що з ним пов'язано."],
+    ["I'm studying at courses \"Web and mobile design interfaces\" in IT-Academy.",
+        "Навчаюся на курсах \"Інтерфейси веб- та мобільного дизайну\" в IT-Academy."],
+    ["Ready to implement excellent projects with wonderful people.",
+        "Готовий реалізовувати відмінні проекти з чудовими людьми."],
+    ["Home", "Головна"],
+    ["About me", "Про мене"],
+    ["Skills", "Навички"],
+    ["Portfolio", "Портфоліо"],
+    ["Contacts", "Контакти"],
+    ["UX | UI designer", "UX | UI Дизайнер"],
+    ["24 years old, Kryvyi Rih", "24 роки, Кривий Ріг"],
+    ["Denis Novik", "Денис<br/>Новік"],
+    ["I work in such programs as", "Працюю в таких програмах як"],
+    ["Want to know more or just chat?\n                You are welcome!", "Хочете дізнатися більше чи просто поспілкуватися?<br>Ласкаво просимо!"],
+    ["Send message", "Відправити повідомлення"],
+    ["Like me on\n                LinkedIn, Instagram, Behance, Dribble", "Поставте лайк мені в<br/> LinkedIn, Instagram, Behance, Dribble"],
+    ["Denis Novik - UX/UI designer", "Денис Новік - UX/UI дизайнер"],
 ]);
 
 
@@ -80,5 +91,11 @@ if (hash === 'ua') {
 
 
     }
+    document.querySelectorAll('.lang__ua')[0].style = "color : #000000";
+    document.querySelectorAll('.lang__ua')[1].style = "color : #000000";
+
+} else {
+    document.querySelectorAll('.lang__en')[0].style = "color : #000000";
+    document.querySelectorAll('.lang__en')[1].style = "color : #000000";
 }
 

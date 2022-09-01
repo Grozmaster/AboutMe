@@ -84,6 +84,7 @@ h2 {
 .profile__inner h1 {
   font-size: 46px;
   line-height: 59px;
+  text-align: left;
 }
 .profile__inner .employee {
   display: flex;
@@ -96,6 +97,7 @@ h2 {
   line-height: 20px;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
+  color: #828282;
 }
 
 .aboutme {
@@ -229,7 +231,7 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 60px;
+  gap: 30px;
 }
 .popup li {
   font-family: 'Gilroy-Bold';
@@ -260,9 +262,6 @@ h2 {
   transform: rotate(180deg);
   margin-block-end: auto;
   padding-top: 50px;
-}
-.poplanguages a:last-child {
-  color: #000000;
 }
 
 @media (max-width: 375px) {
